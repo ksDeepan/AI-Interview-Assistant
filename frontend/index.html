@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Interview Assistant - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Admin Login button style */
+    .admin-link {
+      position: fixed;   /* use fixed so it always stays at top-right */
+      top: 15px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.2s;
+      width: auto;        /* prevent stretching */
+      display: inline-block;
+    }
+    .admin-link:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body class="login-page">
+  <!-- Admin Login Button -->
+  <a href="admin.html" class="admin-link">Admin Login</a>
+
+  <div class="container">
+    <h1>AI Interview Assistant</h1>
+
+    <!-- Login Section -->
+    <div class="form-box">
+      <h2>Login</h2>
+      <input type="text" id="login-username" placeholder="Username">
+      <input type="password" id="login-password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Signup Section -->
+    <div class="form-box">
+      <h2>Signup</h2>
+      <input type="text" id="signup-username" placeholder="Username">
+      <input type="password" id="signup-password" placeholder="Password">
+      <!-- role is automatically assigned by backend -->
+      <button onclick="signup()">Signup</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="user-page">
+  <div class="container">
+    <h1>Welcome, <span id="user-name"></span> 👋</h1>
+    <button onclick="logout()">Logout</button>
+
+    <!-- Question Box -->
+    <div id="question-box" data-qid="">
+      <h2 id="question">Click "Next Question" to start!</h2>
+      <textarea id="answer" placeholder="Type your answer here..."></textarea>
+      <button onclick="submitAnswer()">Submit</button>
+      <button onclick="loadQuestion()">Next Question</button>
+    </div>
+
+    <!-- History Section -->
+    <h2>📜 Your History</h2>
+    <button onclick="loadHistory()">Show History</button>
+    <ul id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
